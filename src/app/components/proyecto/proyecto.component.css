@@ -1,0 +1,131 @@
+
+h2{
+    text-align: center;
+    font-size: clamp(0px, 8vw, 150px); 
+    margin: 40px 0px;
+    font-family: "DM Sans", sans-serif;
+     font-style: normal; 
+     font-weight: 600;
+    }
+
+/* .experiencia-profesional h2 {
+	text-align: center;
+    font-size: clamp(0px, 8vw, 150px); 
+    font-family: "DM Sans", sans-serif;
+     font-style: normal; 
+     font-weight: 600;
+    color: rgb(124, 132, 136);
+	margin: 60px 0px 40px 0px;
+} */
+
+.experiencia {
+	height: 400px;
+	width: 70%;
+	display: flex;
+	justify-content: center;
+	margin: 10px auto 80px auto;
+	border-radius: 20px;
+	background: linear-gradient(to top right, #FF6900, rgb(17, 17, 17));
+	/* background-color: rgb(51, 54, 57); */
+}
+
+.img-experiencia {
+	width: 37vw;
+	opacity: 0.5;
+	border-radius: 0px 20px 20px 0px;
+}
+
+.experiencia-link {
+	margin: 0px 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+h4{
+	color: rgb(211, 206, 206);
+}
+.experiencia-link p {
+	margin: 10px 0px;
+	width: 100%;
+	color: rgb(211, 206, 206);
+}
+
+
+.experiencia-btns {
+	margin-top: 20px;
+}
+
+.experiencia-btns a {
+	text-align: center;
+	padding: 20px;
+	;
+	border-radius: 5px;
+	margin-right: 10px;
+	text-decoration: none;
+}
+
+.btn-izq {
+	background: rgb(124, 132, 136);
+	color: rgb(211, 206, 206);
+}
+
+.btn-izq:hover {
+	background: #9e4506;;
+	text-decoration: underline;
+}
+
+.btn-der {
+	background: rgb(124, 132, 136);
+	color: rgb(211, 206, 206);
+}
+
+.btn-der:hover {
+	background: #9e4506;
+	text-decoration: underline;
+}
+
+
+
+
+/* MEDIA QUERYS */
+
+@media screen and (max-width: 600px) {
+
+h4{
+	text-align: center;
+}
+.experiencia-link p {
+	text-align: center;
+}
+.experiencia {
+	flex-direction: column;
+	height: max-content;
+	width: 70%;
+	margin: 10px auto;
+}
+
+.img-experiencia {
+	width: 100%;
+	border-radius: 20px 20px 0px 0px;
+}
+
+.experiencia-link {
+	margin: 20px 0px;
+}
+
+.experiencia-btns a {
+	padding: 20px;
+	font-size: 16px;
+	display: block;
+	margin: 10px auto;
+	width: 80%;
+}
+
+.img-experiencia:nth-child(2){
+	order: 0;
+}
+
+.experiencia-link:nth-child(1){
+	order: 1;
+}
+}

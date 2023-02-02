@@ -1,0 +1,38 @@
+body{
+    background-color:rgb(17, 17, 17) !important;
+    color:rgb(124, 132, 136) !important;
+  }
+ 
+  .text{
+   color: #FF6900;
+  }
+  #link-home{
+    color:#FF6900 !important;
+  }
+  .nav-item a {
+    text-decoration: none;
+    color: rgb(124, 132, 136) !important; 
+    font-weight:bold;
+  }
+  .nav-item a:hover{
+    color: #FF6900 !important;
+  }
+  
+  .navbar-toggler-icon {
+    background-color: white;
+  }
+  
+  
+  /*--------------------------- MEDIA QUERIES --------------------- */
+
+  @media screen and (max-width: 600px){
+    .navbar-brand .text {
+      display: none;
+    }
+
+    button .navbar-toggler{
+      color: white;
+    }
+  
+
+  }
