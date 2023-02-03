@@ -152,7 +152,7 @@ h4 {
   position: relative;
 }
 
-.box5 i {
+.box5 .fa-folder{
   font-size: 80px;
 }
 
@@ -160,16 +160,16 @@ h4 {
 /* animacion box 5 */
 
 
-.box5 i,
+.box5 .fa-folder,
 .box5 .hover2 {
   opacity: 1;
   transition: opacity 0.5s ease-out;
 }
-.box5:hover i {
+.box5:hover .fa-folder {
   opacity: 0;
   transform: translateY(-100%);
 }
-.box5:not(:hover) i,
+.box5:not(:hover) .fa-folder,
 .box5:not(:hover) .hover2 {
   opacity: 1;
   transform: translateY(0);
