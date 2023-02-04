@@ -1,10 +1,10 @@
 h1 {
   text-align: center;
-  font-size: clamp(0px, 8vw, 150px);
+  font-size: clamp(0px, 6vw, 100px);
   font-family: "DM Sans", sans-serif;
   font-style: normal;
   font-weight: 600;
-  margin: 20px auto 10px auto;
+  margin: 10x auto 10px auto;
   color: rgb(124, 132, 136);
 }
 
@@ -12,7 +12,7 @@ h1 {
   width: 760px;
   margin: 0 auto;
   display: grid;
-  grid-template-rows: 200px 200px;
+  grid-template-rows: 180px 180px;
   grid-template-columns: 25% 25% 50%;
   justify-content: center;
   align-content: center;
@@ -36,7 +36,7 @@ h1 {
 
 
 h4 {
-  margin: 20% auto 5%;
+  margin: 15% auto 5%;
   color: #fcfaf4;
   font-size: 28px;
 }
