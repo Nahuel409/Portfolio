@@ -113,8 +113,11 @@ h4 {
   grid-column: 3 / 4;
   border-radius: 20px;
   background-color: rgb(51, 54, 57);
+  transition: background-color 0.5s ease-in-out;
   display: flex;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
   text-align: center;
   position: relative;
 }
@@ -134,9 +137,14 @@ h4 {
 .box4 {
   grid-row: 2 / 3;
   grid-column: 2 / 3;
+  transition: background-color 0.5s ease-in-out;
   background-color: rgb(51, 54, 57);
   border-radius: 20px;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .box5 {
@@ -151,25 +159,46 @@ h4 {
   border-radius: 20px;
   position: relative;
 }
-
-.box5 .fa-folder{
+.box .fa-book-open{
+  font-size: 70px;
+}
+.box .fa-briefcase{
   font-size: 80px;
 }
+
+/* animacion box 4 */
+
+
+.box2 .fa-book-open,
+.box2 .hover2 {
+  opacity: 1;
+  transition: opacity 0.5s ease-out;
+}
+.box2:hover .fa-book-open {
+  opacity: 0;
+  transform: translateY(-100%);
+}
+.box2:not(:hover) .fa-book-open,
+.box2:not(:hover) .hover2 {
+  opacity: 1;
+  transform: translateY(0);
+}
+/* animacion fin */
 
 
 /* animacion box 5 */
 
 
-.box5 .fa-folder,
+.box5 .fa-briefcase,
 .box5 .hover2 {
   opacity: 1;
   transition: opacity 0.5s ease-out;
 }
-.box5:hover .fa-folder {
+.box5:hover .fa-briefcase {
   opacity: 0;
   transform: translateY(-100%);
 }
-.box5:not(:hover) .fa-folder,
+.box5:not(:hover) .fa-briefcase,
 .box5:not(:hover) .hover2 {
   opacity: 1;
   transform: translateY(0);
