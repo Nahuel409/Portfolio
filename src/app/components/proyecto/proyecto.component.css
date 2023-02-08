@@ -1,24 +1,24 @@
 
 h2{
     text-align: center;
-    font-size: clamp(0px, 8vw, 150px); 
-    margin: 40px 0px;
-    font-family: "DM Sans", sans-serif;
-     font-style: normal; 
-     font-weight: 600;
+  font-size: clamp(0px, 6vw, 100px);
+  font-family: "DM Sans", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  margin: 10x auto 10px auto;
+  color: rgb(124, 132, 136);
     }
 
 
 
 .experiencia {
-	height: 400px;
-	width: 70%;
+	height: 300px;
+	width: 65%;
 	display: flex;
 	justify-content: center;
 	margin: 10px auto 80px auto;
 	border-radius: 20px;
 	background: linear-gradient(to top right, #FF6900, rgb(17, 17, 17));
-	/* background-color: rgb(51, 54, 57); */
 }
 
 .img-experiencia {
@@ -33,6 +33,9 @@ h2{
 	flex-direction: column;
 	justify-content: center;
 }
+
+
+
 h4{
 	color: rgb(211, 206, 206);
 }
@@ -50,7 +53,6 @@ h4{
 .experiencia-btns a {
 	text-align: center;
 	padding: 20px;
-	;
 	border-radius: 5px;
 	margin-right: 10px;
 	text-decoration: none;
