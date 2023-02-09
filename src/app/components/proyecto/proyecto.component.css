@@ -1,125 +1,133 @@
 
-h2{
+    .title{
+		text-align: center;
+		font-size: clamp(0px, 6vw, 100px);
+		font-family: "DM Sans", sans-serif;
+		font-style: normal;
+		font-weight: 600;
+		margin: 10x auto 10px auto;
+		color: rgb(124, 132, 136);
+	  }
+
+.container_projects{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
+    margin-top: 20px;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 90px;
+}
+
+.project_card{
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 430px;
+    height: 450px;
+    background-color:  rgb(51, 54, 57);
+    border-radius: 20px;
+}
+
+.container_title{
+    margin-bottom: 15px;
+    width: 100%;
+    padding: 20px 0;
     text-align: center;
-  font-size: clamp(0px, 6vw, 100px);
-  font-family: "DM Sans", sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  margin: 10x auto 10px auto;
-  color: rgb(124, 132, 136);
-    }
-
-
-
-.experiencia {
-	height: 300px;
-	width: 65%;
-	display: flex;
-	justify-content: center;
-	margin: 10px auto 80px auto;
-	border-radius: 20px;
-	background: linear-gradient(to top right, #FF6900, rgb(17, 17, 17));
 }
 
-.img-experiencia {
-	width: 37vw;
-	opacity: 0.5;
-	border-radius: 0px 20px 20px 0px;
+.container_title h1{
+    font-size: 25px;
+    font-weight: 600;
+    color: rgb(124, 132, 136);
 }
 
-.experiencia-link {
-	margin: 0px 10px;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
+.project_card_img{
+    width: 400px;
+    transition: all 0.3s ease;
+    transform: scale(1);
 }
 
-
-
-h4{
-	color: rgb(211, 206, 206);
-}
-.experiencia-link p {
-	margin: 10px 0px;
-	width: 100%;
-	color: rgb(211, 206, 206);
+.container_buttons{
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
 }
 
-
-.experiencia-btns {
-	margin-top: 20px;
+.buttons{
+    padding: 12px 55px;
+    border-radius: 10px;
+    background-color:rgb(124, 132, 136);
+    color: white;
+    font-size: 15px;
+    border: none;
+    text-decoration: none;
+    transition: all 0.3s ease;
 }
 
-.experiencia-btns a {
-	text-align: center;
-	padding: 20px;
-	border-radius: 5px;
-	margin-right: 10px;
-	text-decoration: none;
+.buttons:hover{
+    background: #ff6900;
 }
 
-.btn-izq {
-	background: rgb(124, 132, 136);
-	color: rgb(211, 206, 206);
+.container_description{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 315px;
+    height: 123px;
+    padding: 0 20px;
+    background-color: #ff6900;
+    position: absolute;
+    right: -400px;
+    top: 120px;
+    color: white;
+    line-height: 1.3;
+    border-radius: 10px 0 0 10px;
+    transition: all 0.5s ease;
 }
 
-.btn-izq:hover {
-	background: #9e4506;;
-	text-decoration: underline;
+.container_tecnologies{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 198px;
+    height: 74px;
+    padding: 0 20px;
+    background-color: #ff6900;
+    position: absolute;
+    border-radius: 0 10px 10px 0;
+    left: -250px;
+    bottom: 100px;
+    transition: all 0.5s ease;
 }
 
-.btn-der {
-	background: rgb(124, 132, 136);
-	color: rgb(211, 206, 206);
+.container_tecnologies ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.btn-der:hover {
-	background: #9e4506;
-	text-decoration: underline;
+.container_tecnologies img{
+    width: 40px;
+    margin: 0 10px;
 }
 
-
-
-
-/* MEDIA QUERYS */
-
-@media screen and (max-width: 600px) {
-
-h4{
-	text-align: center;
-}
-.experiencia-link p {
-	text-align: center;
-}
-.experiencia {
-	flex-direction: column;
-	height: max-content;
-	width: 70%;
-	margin: 10px auto;
+.project_card:hover .project_card_img{
+    transform: scale(0);
 }
 
-.img-experiencia {
-	width: 100%;
-	border-radius: 20px 20px 0px 0px;
+.project_card:hover .container_description{
+    right: 0;
 }
 
-.experiencia-link {
-	margin: 20px 0px;
+.project_card:hover .container_tecnologies{
+    left: 0;
 }
 
-.experiencia-btns a {
-	padding: 20px;
-	font-size: 16px;
-	display: block;
-	margin: 10px auto;
-	width: 80%;
-}
-
-.img-experiencia:nth-child(2){
-	order: 0;
-}
-
-.experiencia-link:nth-child(1){
-	order: 1;
-}
-}
