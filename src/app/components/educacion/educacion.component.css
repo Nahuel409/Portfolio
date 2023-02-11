@@ -8,6 +8,14 @@ h2{
   color: rgb(124, 132, 136);
     }
 
+    h2 a{
+        color: inherit;
+        text-decoration: none;
+    }
+    h2 a:hover{
+        color: #ff6900;
+    }
+
 .contenedor-formacion {
 	display: flex;
 	justify-content: space-around;
