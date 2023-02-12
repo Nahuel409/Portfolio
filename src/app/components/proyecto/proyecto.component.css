@@ -25,6 +25,7 @@
     width: 100%;
     flex-wrap: wrap;
     gap: 90px;
+    margin-bottom: 10px;
 }
 
 .project_card{
@@ -36,7 +37,9 @@
     flex-direction: column;
     width: 430px;
     height: 450px;
-    background-color:  rgb(51, 54, 57);
+    background: linear-gradient(to top right, #FF6900, /* rgb(17, 17, 17) */ rgb(41, 44, 46));
+    box-shadow: 0 10px 20px rgba(255, 255, 255, 0.1), 0 6px 6px rgba(255, 255, 255, 0.15);
+    /* background-color:  rgb(51, 54, 57); */
     border-radius: 20px;
 }
 
@@ -50,8 +53,8 @@
 .container_title h2{
     font-size: 25px;
     font-weight: 600;
-    color:#ff6900;
-  /*   color: rgb(124, 132, 136); */
+   /*  color:#ff6900; */
+    color: rgb(203, 201, 201);
 }
 
 .project_card_img{
@@ -88,9 +91,9 @@
     justify-content: center;
     align-items: center;
     width: 315px;
-    height: 123px;
+    height: 140px;
     padding: 0 20px;
-    background-color: #ff6900;
+    background-color: rgb(124, 132, 136);
     position: absolute;
     right: -400px;
     top: 120px;
@@ -107,7 +110,7 @@
     width: 198px;
     height: 74px;
     padding: 0 20px;
-    background-color: #ff6900;
+    background-color: rgb(124, 132, 136);
     position: absolute;
     border-radius: 0 10px 10px 0;
     left: -250px;
@@ -141,17 +144,43 @@
 
 @media screen and (max-width: 400px) {
 
-
+    .project_card{
+        height: auto;
+    }
     .container_description{
         width: 100%;
         height: auto;
     }
 
+    .container_tecnologies{
+        bottom: 160px;
+        transition: all 0.5s ease;
+    }
 
     .container_buttons{
-    margin-top: 100px;
+    margin-top: 80px;
+    flex-direction: column;
     }
     .buttons{
-        width: 30%;
+        width: 100%;
+        margin-bottom: 10px;
     }
 }
+
+
+@media only screen and (max-width: 350px) {
+
+    .title{
+        margin-top: 20px;
+        margin-bottom: 2px;
+        font-size: 28px;
+    }
+    .container_description,
+    .container_tecnologies {
+      display: none;
+    }
+    .project_card:hover .project_card_img {
+        transform: none;
+      }
+  }
+  
